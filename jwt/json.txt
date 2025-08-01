@@ -1,0 +1,20 @@
+JWT - Authoraization not Authentication
+request will be checked whether the logged useris accessing 
+
+jwt divide into three pparts
+
+header - alogorithms and type
+payload - data
+  - sub - id of the token
+  - any data after that 
+  - iat - finally the ending time of the jwt
+
+signature - base64 encoded secret code
+(
+    BASE64 of header
+    base64 of payload
+    256 bit secret code
+)
+
+
+two bank servers example - session is dependant but jwt not
